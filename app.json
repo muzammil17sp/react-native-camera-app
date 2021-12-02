@@ -1,29 +1,36 @@
 {
   "expo": {
-    "name": "expo-app",
-    "slug": "expo-app",
+    "name": "Games",
+    "slug": "games",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/camera.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow React Native to access your location"
+        }
+      ]
+    ],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.muzammil17sp.games"
     },
     "web": {
       "favicon": "./assets/favicon.png"
